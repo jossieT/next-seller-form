@@ -138,7 +138,7 @@ const CreateProduct: React.FC<CreateProductProps> = ({
   return (
 
     <div className="bg-gray-100 min-h-screen flex justify-center items-center">
-
+     
       <Formik
         initialValues={formValues}
         validationSchema={validationSchema}
@@ -146,17 +146,17 @@ const CreateProduct: React.FC<CreateProductProps> = ({
       >
         {({ setFieldValue }) => (
 
-          <Form className="bg-white px-5 py-1 mt-2 rounded-md w-[600px]">
+          <Form className="bg-white rounded-md w-[600px] relative">
 
-            <div className="bg-gray-200 rounded-b-md w-full flex items-center justify-between px-5 py-2 mb-2">
+            <div className="bg-gray-200 rounded-b-md w-full flex items-center justify-between px-3 py-2 mb-2">
               <h3 className="font-bold text-gray-500 ">New Dress</h3>
               <div className="rounded-full bg-gray-300 border-2 border-gray-400 h-8 w-8 flex items-center justify-center">
                 <span className="text-lg" role="img" aria-label="dress emoji">👗</span>
               </div>
             </div>
-
+            <div className="px-5">
             <div className="flex flex-col space-y-4">
-              
+
               <div className="grid grid-cols-1 space-y-2">
                 <label
                   htmlFor="title"
@@ -468,7 +468,7 @@ const CreateProduct: React.FC<CreateProductProps> = ({
                 <span>File type: png, jpg, webp...</span>
               </p>
             </div>
-
+            </div>
             <div className="max-w-lg mx-auto py-3">
               <Button
                 loading={isPending}
