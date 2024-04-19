@@ -39,10 +39,11 @@ function useTelegramInitData() {
         }
         window.Telegram?.WebApp.ready();
         window.Telegram?.WebApp.enableClosingConfirmation();
-        setData(initData);
-        //setWebAPP(window.Telegram?.webApp);
-
+        //setData(initData);
         //setWebAPP(window.Telegram?.WebApp);
+        //setWebAPP(window.Telegram?.WebApp as TelegramWebApps.WebApp | undefined);
+        // const webAppInstance: TelegramWebApps.WebApp | undefined = window.Telegram?.WebApp;
+        // setWebAPP(webAppInstance);
       }
     }
 
