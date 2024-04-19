@@ -2,8 +2,8 @@
 import React, { useEffect } from "react";
 import useTelegramInitData from "./hooks/useTelegramInitData";
 import { useSelector } from "react-redux";
-import { RootState } from "@/store";
-import { getTotalCartUniqueItems } from "@/store/cart/cart-slice";
+//import { RootState } from "@/store";
+//import { getTotalCartUniqueItems } from "@/store/cart/cart-slice";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 

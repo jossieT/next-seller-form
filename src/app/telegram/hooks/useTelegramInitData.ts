@@ -40,7 +40,9 @@ function useTelegramInitData() {
         window.Telegram?.WebApp.ready();
         window.Telegram?.WebApp.enableClosingConfirmation();
         setData(initData);
-        setWebAPP(window.Telegram?.WebApp);
+        //setWebAPP(window.Telegram?.webApp);
+
+        //setWebAPP(window.Telegram?.WebApp);
       }
     }
 
